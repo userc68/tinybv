@@ -13,3 +13,4 @@ the hex viewer to end all hex viewers.
 gcc tinybv.c -o tinybv
 ./tinybv (file in current dir, ex: tinybv)
 ```
+Version 1 in the works 
