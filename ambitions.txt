@@ -1,0 +1,22 @@
+a lot of inspiration from this website
+https://hexed.it/
+
+#1 data saving:
+if program gets passed flag -config:nullhex='.'
+the null hexadecimal (to signify 0x00 or null hex value)
+gets saved to a config file so that you dont have to 
+pass the flag every time the program runs
+
+#2 editing w/ ncurses
+i want to implement editing hex values through selection
+by pressing enter. Taking inspiration from neovim I want 
+the program to have its own command line where you can 
+pass :w to write to the file.
+
+#3 decimal and binary translations 
+for the hex value the cursor is hovering over at the top
+of the terminal
+
+#4 highlighting 
+highlighting of the edited and selected areas on both sides of 
+reader
