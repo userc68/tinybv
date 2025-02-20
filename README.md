@@ -11,3 +11,5 @@ encourage users to modify and optimize, please report literally any memory leaks
 gcc tinybv.c -o tinybv
 ./tinybv (file in current dir, ex: tinybv)
 ```
+
+OPEN TO NAME CHANGES AND CRITICISMS
