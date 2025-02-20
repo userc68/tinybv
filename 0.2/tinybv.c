@@ -9,22 +9,6 @@ int main(int argc, char *argv[]) {
   int i = 0;
   int line_count = 1;
 
-  if (argc > 2) {
-    if (strcmp(argv[2], "-0") == 0) {
-      confignull = 0;
-    } 
-    else if (strcmp(argv[2], "-1") == 0) {
-      confignull = 1;
-    }
-    else if (strcmp(argv[2], "-2") == 0) {
-      confignull = 2;
-    } 
-    else {
-      errormsg(argv[0], "invalid argument ");
-      return EXIT_FAILURE;
-    }
-  }
-
   file = fopen(filename, "rb");
   if (file == NULL) {
     errormsg(argv[0], "file finding");
@@ -46,7 +30,7 @@ int main(int argc, char *argv[]) {
       free(line_str);
     }
 
-    ascii[i] = bytetochar(byte, confignull);
+    ascii[i] = bytetochar(byte);
     printhex(byte);
     i++;
 
