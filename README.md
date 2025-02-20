@@ -10,7 +10,7 @@ the hex viewer to end all hex viewers.
 
 ### compilation and execution:
 ```cmd
-gcc tinybv.c -o tinybv -lm
+gcc tinybv.c -o tinybv
 ./tinybv (file in current dir, ex: tinybv)
 ```
 
