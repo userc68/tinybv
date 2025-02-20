@@ -13,5 +13,3 @@ the hex viewer to end all hex viewers.
 gcc tinybv.c -o tinybv
 ./tinybv (file in current dir, ex: tinybv)
 ```
-
-still dont know why I need to link math.h
