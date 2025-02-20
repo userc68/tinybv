@@ -7,28 +7,15 @@
 #include <ctype.h>
 
 int hex_len = 12;
-int confignull = 0;
 
 void printhex(unsigned char byte) {
   printf("%02X ", byte);
 }
 
-char bytetochar(unsigned char byte, int confignull) {
+char bytetochar(unsigned char byte) {
+  if (byte == 0) return '.';
   if (byte == '\n' || byte == '\r') return ' ';
-  switch (confignull) {
-    case 0:
-      if (byte == 0) return ' ';
-      break;
-    case 1:
-      if (byte == 0) return '.';
-      break;
-    case 2:
-      if (byte == 0) return '`';
-      break;
-    default:
-      break;
-  }
-  return isprint(byte) ? byte : '.';
+  return isprint(byte) ? byte : ' ';
 }
 
 
